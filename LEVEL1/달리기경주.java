@@ -22,6 +22,17 @@ public class 달리기경주 {
 
     // Array 탐색.. 시간 초과
     // map으로 변경
+    /* 
+     * 해쉬맵은 Bucket이라는 구조를 가지고 키를 찾는다.
+     * Bucket에는 key로 생성한 Object와 해쉬코드를 쌍으로 들어있다.
+     * 해쉬코드에는 순서가 있고 그 순서를 기반으로 값을 검색하기 때문에 키를 빠르게 찾을 수 있다.
+     * 
+     * 단점
+     * 키, 값을 모두 저장해야하며 추가로 Bucket까지 생성해야하니 공간복잡도가 커지는 단점이 있다. 
+     * 해쉬코드를 생성하는 과정 자체도 문제가 있을 수 있고 찾는 값이
+     * 배열의 첫 원소라면 상황에 따라 배열의 검색속도가 더 빠른 경우도 있을 것이다.
+     */
+
     static class Solution {
         public String[] solution(String[] players, String[] callings) {
             String[] answer = {};
